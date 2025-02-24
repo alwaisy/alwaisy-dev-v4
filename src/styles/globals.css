@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
+  /* :root {
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
     --card: 0 0% 100%;
@@ -56,6 +56,92 @@
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%
+  } */
+
+  :root {
+    /* Light theme: Using your lighter colors where applicable */
+    --background: 0 0% 100%;
+    /* Keeping white as default background */
+    --foreground: 0 0% 8.6%;
+    /* Approx #141414 for text */
+    --card: 0 0% 100%;
+    /* White background */
+    --card-foreground: 0 0% 10.6%;
+    /* Approx #1A1A1A */
+    --popover: 0 0% 100%;
+    /* White */
+    --popover-foreground: 0 0% 12.2%;
+    /* Approx #1F1F1F */
+    --primary: 0 0% 17.3%;
+    /* Approx #2B2B2B */
+    --primary-foreground: 0 0% 100%;
+    /* #FFFFFF */
+    --secondary: 0 0% 90%;
+    /* Approx #FFFFFF / 90% */
+    --secondary-foreground: 0 0% 8.6%;
+    /* #141414 */
+    --muted: 0 0% 80%;
+    /* Approx #FFFFFF / 80% */
+    --muted-foreground: 0 0% 50%;
+    /* Approx #FFFFFF / 50% */
+    --accent: 0 0% 70%;
+    /* Approx #FFFFFF / 70% */
+    --accent-foreground: 0 0% 10.6%;
+    /* #1A1A1A */
+    --destructive: 0 84.2% 60.2%;
+    /* Unchanged, no red in your palette */
+    --destructive-foreground: 0 0% 98%;
+    /* Near white */
+    --border: 0 0% 92%;
+    /* Approx #FFFFFF / 8% for subtle border */
+    --input: 0 0% 92%;
+    /* Same as border */
+    --ring: 0 0% 8.6%;
+    /* #141414 for focus ring */
+    --radius: 0.5rem;
+    /* Unchanged */
+  }
+
+  .dark {
+    /* Dark theme: Using your dark colors */
+    --background: 0 0% 8.6%;
+    /* #141414 */
+    --foreground: 0 0% 100%;
+    /* #FFFFFF */
+    --card: 0 0% 10.6%;
+    /* #1A1A1A */
+    --card-foreground: 0 0% 90%;
+    /* #FFFFFF / 90% */
+    --popover: 0 0% 12.2%;
+    /* #1F1F1F */
+    --popover-foreground: 0 0% 80%;
+    /* #FFFFFF / 80% */
+    --primary: 0 0% 17.3%;
+    /* #2B2B2B */
+    --primary-foreground: 0 0% 100%;
+    /* #FFFFFF */
+    --secondary: 0 0% 0% / 0.5;
+    /* #000000 / 50%, opacity approximated */
+    --secondary-foreground: 0 0% 70%;
+    /* #FFFFFF / 70% */
+    --muted: 0 0% 0% / 0.08;
+    /* #000000 / 8%, opacity approximated */
+    --muted-foreground: 0 0% 60%;
+    /* #FFFFFF / 60% */
+    --accent: 0 0% 10.6%;
+    /* #1A1A1A */
+    --accent-foreground: 0 0% 50%;
+    /* #FFFFFF / 50% */
+    --destructive: 0 62.8% 30.6%;
+    /* Unchanged */
+    --destructive-foreground: 0 0% 98%;
+    /* Near white */
+    --border: 0 0% 92%;
+    /* #FFFFFF / 8% */
+    --input: 0 0% 12.2%;
+    /* #1F1F1F */
+    --ring: 0 0% 100%;
+    /* #FFFFFF for dark theme focus */
   }
 }
 
@@ -94,5 +180,16 @@
       inset 0px 5px 10px -2.75px rgba(255, 255, 255, 0.2025),
       0px 0px 10px 0.5px rgba(255, 255, 255, 0.03);
     /* Reduced outer shadow */
+  }
+}
+
+
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
   }
 }
