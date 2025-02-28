@@ -1,16 +1,12 @@
--Dark1: #141414
--Dark2: #1A1A1A
--Dark3: #1F1F1F
--Dark4: #2B2B2B
--Dark5: #000000 / 50%
--Dark8: #000000 / 8%
-
--White100: #FFFFFF /100
--White90: #FFFFFF / 90%
--White80: #FFFFFF /80%
--White70: #FFFFFF /70%
--White60: #FFFFFF / 60%
--White50: #FFFFFF / 50%
--White40: #FFFFFF / 40%
-
--Border8: #FFFFFF / 8%
+box-sizing: border-box;
+width: 26px;
+height: 26px;
+display: block;
+aspect-ratio: 1 / 1;
+background-image: url(/*photo-1522075469751-3a6694fb2f61?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxMzc5NjJ8MHwxfHNlYXJjaHw0NHx8ZmFjZXxlbnwwfHx8fDE3MjU0NDUxMTl8MA&ixlib=rb-4.0.jpg*/);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+position: absolute;
+border-radius: 72px;
+border: 1px solid #545454;
