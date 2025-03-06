@@ -2,6 +2,10 @@
 
 import { ShootingStars } from "~/components/aceternityui/shooting-stars";
 import { StarsBackground } from "~/components/aceternityui/stars-background";
+import Constellation from "~/components/icons/constellation";
+import Euphoria from "~/components/icons/euphoria";
+import Layers from "~/components/icons/layers";
+import Sisyphus from "~/components/icons/sisyphus";
 import { Meteors } from "~/components/magicui/meteors";
 import { NoSSR } from "~/components/no-ssr";
 import TimeDisplay from "~/components/time-display";
@@ -30,18 +34,32 @@ const HomeHero = () => {
           </Typography>
         </div>
 
-        <div className="mb-8 max-w-[332px]">
+        <div className="mb-5 max-w-[332px]">
           <Typography as={"p"} variant={"body-l"} weight={"medium"}>
             I specialize in creating visually stunning designs that leave a
             lasting impression.
           </Typography>
         </div>
 
-        <div className="relative z-10 flex items-center gap-4">
+        <div className="relative z-10 mb-8 flex items-center gap-4">
           <button className="btn">Contact</button>
           <NoSSR>
             <TimeDisplay />
           </NoSSR>
+        </div>
+
+        <div className="relative z-10 flex h-[112px] items-end">
+          <div className="h-auto">
+            <Typography as={"p"} variant={"body-l"} weight={"medium"}>
+              Trusted by the best
+            </Typography>
+            <div className="mt-4 flex h-min w-full flex-row flex-nowrap content-center items-center justify-start gap-[22px] overflow-hidden rounded-none bg-transparent p-0">
+              <Sisyphus />
+              <Euphoria />
+              <Constellation />
+              <Layers />
+            </div>
+          </div>
         </div>
 
         {/* background */}
